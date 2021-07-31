@@ -1,9 +1,14 @@
+
+
 body{
     color: #222;
     font-size: 14px;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -59,68 +64,108 @@ div.container {
     margin-bottom: 5vh;
 }
 
-form {
+section {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 600px;
-    height: 30px;
-    border: 1px solid black;
-    border-radius: 20px;
+    height: 40px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
 }
 
 #search{
     flex-grow: 1;
-    height: 25px;
+    height: 33px;
+    padding: 0 1px;
+    border: none;
+}
+
+#mag-glass{
+    width: 22px;
+    padding-left: 3px;
+}
+
+#mic{
+    width: 22px;
+    padding-right: 3px;
 }
 
 header{
   
     display: flex;
 }
-.button-container {
+
+.input-container {
     padding-top: 2rem;
     display: flex;
     justify-content: center;
     gap: 1.5rem;
-    
 }
 
-button{
-    background: none;
-	color: inherit;
-	border: none;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
+#btnGS { 
+    height: 30px;
+    font-size: 14px;
+    text-align: center;
+    width: 125px;
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    color: #5F6368;
 }
 
-.button-container button:hover, :focus, :visited{
-    box-shadow: 0 1px 1px rgba(0,0,0,.1);
-    background-color: #f8f9fa;
-    border: 1px solid #dadce0;
-    color: #202124;
+#btnIF {
+    height: 30px;
+    font-size: 14px;
+    text-align: center;
+    width: 125px;
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    color: #5F6368;
 }
+
+#btnGS:hover {
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    background-image: -webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
+    background-color: #f8f8f8;
+    border: 1px solid #c6c6c6;
+    color: #222;
+}
+
+#btnIF:hover {
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    background-image: -webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
+    background-color: #f8f8f8;
+    border: 1px solid #c6c6c6;
+    color: #222;
+}
+
+
 /* footer */
-footer {
+.footer {
     display: flex;
     flex-direction: row;
     flex-grow: 1;
     margin: 0;
     padding: 0;
+    margin-top: auto;
+    
 }
 
 ul.footer-right{
     display: flex;
     flex-direction: row;
     margin-right: auto;
+    margin-top: auto;
 }
 
 ul.footer-left {
     display: flex;
     flex-direction: row;
     margin-left: auto;
+    margin-top: auto;
+    padding-right: 40px;
 }
+
 
 li{
     padding: 15px 15px;
